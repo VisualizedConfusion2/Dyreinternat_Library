@@ -1,6 +1,6 @@
 ﻿namespace Dyreinternat_Library
 {
-    public class Class1
+    public class Employee
     {
 
     }

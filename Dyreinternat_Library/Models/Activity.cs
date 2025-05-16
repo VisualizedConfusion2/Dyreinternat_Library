@@ -45,7 +45,10 @@ namespace Dyreinternat_Library
 
         public int ActivityID
         {
-            get => _activityID;
+            get
+            {
+                return _activityID;
+            }
             set => _activityID = value;
         }
 
