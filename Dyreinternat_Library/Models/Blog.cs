@@ -5,7 +5,7 @@
 
         private string _titel;
         private string _description;
-        private string _datetime;
+        private DateTime _datetime;
         private string _img;
         private string _author;
         private int _blogID;
@@ -22,7 +22,7 @@
             set => _description = value;
         }
 
-        public string DateTime
+        public DateTime DateTime
         {
             get => _datetime;
             set => _datetime = value;
@@ -49,7 +49,7 @@
             set => _blogID = value;
         }
 
-        public Blog(string titel, string description, string datetime, string image, string author, int blogID) 
+        public Blog(string titel, string description, DateTime datetime, string image, string author, int blogID) 
         { 
             Titel = titel;
             Description = description;

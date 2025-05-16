@@ -6,7 +6,7 @@ namespace Dyreinternat_Library
     {
         private string _titel;
         private string _description;
-        private string _datetime;
+        private DateTime _datetime;
         private int _numberOfPerticipants;
         private string _author;
         private int _activityID;
@@ -23,7 +23,7 @@ namespace Dyreinternat_Library
             get => _description;
             set => _description = value;
         }
-        public string DateTime 
+        public DateTime DateTime 
         {
            get => _datetime;
            set => _datetime = value;
@@ -52,7 +52,7 @@ namespace Dyreinternat_Library
             set => _activityID = value;
         }
 
-        public Activity(string titel, string description, string datetime, int numberOfPerticipants, string author, int activityID) 
+        public Activity(string titel, string description, DateTime datetime, int numberOfPerticipants, string author, int activityID) 
         { 
         
             Titel = titel;
