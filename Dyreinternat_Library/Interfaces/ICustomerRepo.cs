@@ -8,5 +8,9 @@ namespace Dyreinternat_Library.Interfaces
 {
     public interface ICustomerRepo
     {
+        string Name { get; set; }
+        string Email { get; set; }
+        string PhoneNumber { get; set; }
+        int CustomerID { get; set; }
     }
 }

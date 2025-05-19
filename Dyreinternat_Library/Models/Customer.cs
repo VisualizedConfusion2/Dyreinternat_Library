@@ -47,7 +47,7 @@
             _name = name;
             _email = email;
             _phoneNumber = phoneNumber;
-            _costomerID = costumerID;
+            _customerID = costumerID;
             
         }
 
