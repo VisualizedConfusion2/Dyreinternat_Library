@@ -3,7 +3,7 @@
     public class Blog
     {
         //Instance Variables
-        private string _titel;
+        private string _title;
         private string _description;
         private DateTime _datetime;
         private string _img;
@@ -11,10 +11,10 @@
         private int _blogID;
 
         //Properties
-        public string Titel
+        public string Title
         {
-            get => _titel;
-            set => _titel = value;
+            get => _title;
+            set => _title = value;
         }
 
         public string Description
@@ -52,14 +52,14 @@
 
 
         //Constructor
-        public Blog(string titel, string description, DateTime datetime, string image, string author, int blogID) 
+        public Blog(string title, string description, DateTime datetime, string image, string author, int blogID) 
         { 
-            Titel = titel;
-            Description = description;
-            DateTime = datetime;
-            Image = image;
-            Author = author;
-            BlogID = blogID;
+            _title = title;
+            _description = description;
+            _datetime = datetime;
+            _img = image;
+            _author = author;
+            _blogID = blogID;
         
         }
 

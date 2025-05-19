@@ -3,34 +3,34 @@
     public class Booking
     {
         //Instance Variables
-        private string phoneNumber;
-        private int bookingID;
+        private string _phoneNumber;
+        private int _bookingID;
 
         //Properties
         public string PhoneNumber
         {
             get
             {
-                return phoneNumber;
+                return _phoneNumber;
             }
-            set => phoneNumber = value;
+            set => _phoneNumber = value;
         }
 
         public int BookingID 
         { 
             get
             {
-                return bookingID;
+                return _bookingID;
             }
-            set => bookingID = value; 
+            set => _bookingID = value; 
         }
 
 
         //Constructor
         public Booking(string phoneNumber, int bookingID)
         {
-            PhoneNumber = phoneNumber;
-            BookingID = bookingID;
+            _phoneNumber = phoneNumber;
+            _bookingID = bookingID;
         }
     }
 }

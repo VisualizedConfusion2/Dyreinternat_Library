@@ -40,10 +40,10 @@
         //Constructor
         public DoctorVisit(DateTime dateTime, string description, int animalID, int createdByEmployeeID) 
         {
-            Datetime = dateTime;
-            Description = description;
-            AnimalID = animalID;
-            CreatedByEmployeeID = createdByEmployeeID;
+            _datetime = dateTime;
+            _description = description;
+            _animalID = animalID;
+            _createdByEmployeeID = createdByEmployeeID;
         
         
         }

@@ -49,11 +49,11 @@
         //Constructor
         public Employee(string name, string email, string phoneNumber, int employeeID, Enum role) 
         { 
-            Name = name;
-            Email = email;
-            PhoneNumber = phoneNumber;
-            EmployeeID = employeeID;
-            Role = role;
+            _name = name;
+            _email = email;
+            _phoneNumber = phoneNumber;
+            _employeeID = employeeID;
+            _role = role;
         
         
         }

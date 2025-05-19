@@ -3,69 +3,69 @@
     public class Animal
     {
         //Instance Variables
-        private string name;
-        private string race;
-        private string species;
-        private int chipNumber;
-        private string characteristics;
-        private string size;
-        private int birthYear;
-        private string medicalHistory;
-        private string visitorLog;
+        private string _name;
+        private string _race;
+        private string _species;
+        private int _chipNumber;
+        private string _characteristics;
+        private string _size;
+        private int _birthYear;
+        private string _medicalHistory;
+        private string _visitorLog;
 
         //Properties
         public string Name
         {
-            get => name;
-            set => name = value;
+            get => _name;
+            set => _name = value;
         }
 
         public string Race
         {
-            get => race;
-            set => race = value;
+            get => _race;
+            set => _race = value;
         }
 
         public string Species
         {
-            get => species;
-            set => species = value;
+            get => _species;
+            set => _species = value;
         }
 
         public int ChipNumber
         {
-            get => chipNumber;
-            set => chipNumber = value;
+            get => _chipNumber;
+            set => _chipNumber = value;
         }
 
         public string Characteristics
         {
-            get => characteristics;
-            set => characteristics = value;
+            get => _characteristics;
+            set => _characteristics = value;
         }
 
         public string Size
         {
-            get => size;
-            set => size = value;
+            get => _size;
+            set => _size = value;
         }
 
         public int BirthYear
         {
-            get => birthYear;
-            set => birthYear = value;
+            get => _birthYear;
+            set => _birthYear = value;
         }
 
         public string MedicalHistory
         {
-            get => medicalHistory;
-            set => medicalHistory = value;
+            get => _medicalHistory;
+            set => _medicalHistory = value;
         }
 
         public string VisitorLog
         {
-            get => visitorLog;
-            set => visitorLog = value;
+            get => _visitorLog;
+            set => _visitorLog = value;
         }
 
         //Constructor
@@ -73,15 +73,15 @@
               string characteristicsValue, string sizeValue, int birthYearValue,
               string medicalHistoryValue, string visitorLogValue)
         {
-            name = nameValue;
-            race = raceValue;
-            species = speciesValue;
-            chipNumber = chipNumberValue;
-            characteristics = characteristicsValue;
-            size = sizeValue;
-            birthYear = birthYearValue;
-            medicalHistory = medicalHistoryValue;
-            visitorLog = visitorLogValue;
+            _name = nameValue;
+            _race = raceValue;
+            _species = speciesValue;
+            _chipNumber = chipNumberValue;
+            _characteristics = characteristicsValue;
+            _size = sizeValue;
+            _birthYear = birthYearValue;
+            _medicalHistory = medicalHistoryValue;
+            _visitorLog = visitorLogValue;
         }
     }
 }

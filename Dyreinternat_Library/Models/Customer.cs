@@ -44,10 +44,10 @@
         //Constructor
         public Costomer(string name, string email, string phoneNumber, int costumerID)
         {
-            Name = name;
-            Email = email;
-            PhoneNumber = phoneNumber;
-            CostomerID = costumerID;
+            _name = name;
+            _email = email;
+            _phoneNumber = phoneNumber;
+            _costomerID = costumerID;
             
         }
 
