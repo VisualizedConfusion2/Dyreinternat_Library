@@ -1,12 +1,12 @@
 ﻿namespace Dyreinternat_Library
 {
-    public class Costomer
+    public class Customer
     {
         //Instance Variables
         private string _name;
         private string _email;
         private string _phoneNumber;
-        private int _costomerID;
+        private int _customerID;
 
 
         //Properties
@@ -31,18 +31,18 @@
             set => _phoneNumber = value;
         }
 
-        public int CostomerID
+        public int CustomerID
         {
             get
             {
-                return _costomerID;
+                return _customerID;
             }
-            set => _costomerID = value;
+            set => _customerID = value;
         }
 
 
         //Constructor
-        public Costomer(string name, string email, string phoneNumber, int costumerID)
+        public Customer(string name, string email, string phoneNumber, int costumerID)
         {
             _name = name;
             _email = email;
