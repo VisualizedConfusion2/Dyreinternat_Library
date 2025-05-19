@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dyreinternat_Library.Interfaces;
 using Dyreinternat_Library.Models;
+
 
 namespace Dyreinternat_Library.Services
 {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dyreinternat_Library.Interfaces
 {
-    internal class IDoctorVisitRepo
+    public interface IDoctorVisitRepo
     {
     }
 }
