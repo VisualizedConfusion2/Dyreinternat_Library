@@ -8,9 +8,10 @@ namespace Dyreinternat_Library.Interfaces
 {
     public interface ICustomerRepo
     {
-        string Name { get; set; }
-        string Email { get; set; }
-        string PhoneNumber { get; set; }
-        int CustomerID { get; set; }
+        List<Customer> GetAll(); // List for all Customers
+
+        void Add(Customer customer); // Adds a customer to the repository
+
+        Customer GetByID(int id); // Gets a specific customer from the ID
     }
 }

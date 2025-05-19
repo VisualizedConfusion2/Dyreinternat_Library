@@ -8,7 +8,10 @@ namespace Dyreinternat_Library.Interfaces
 {
     public interface IBookingRepo
     {
-        string PhoneNumber { get; set; }
-        int BookingID { get; set; }
+        List<Booking> GetAll(); // List for all Bookings
+
+        void Add(Booking booking); // Adds a booking to the repository
+
+        Booking GetByID(int id); // Gets a specific booking from the ID
     }
 }

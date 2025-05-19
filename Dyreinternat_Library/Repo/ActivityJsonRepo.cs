@@ -8,5 +8,6 @@ namespace Dyreinternat_Library.Repo
 {
     public class ActivityJsonRepo
     {
+        private list
     }
 }

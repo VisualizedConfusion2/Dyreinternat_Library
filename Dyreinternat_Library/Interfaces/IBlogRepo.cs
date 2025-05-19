@@ -8,11 +8,10 @@ namespace Dyreinternat_Library.Interfaces
 {
     public interface IBlogRepo
     {
-        string Title { get; set; }
-        string Description { get; set; }
-        DateTime DateTime { get; set; }
-        string Image { get; set; }
-        string Author { get; set; }
-        int BlogID { get; set; }
+        public List<Blog> GetAll(); // List for all Blogs
+
+        public void Add(Blog blog); // Adds a blog to the repository
+
+        public Blog GetByID(int id); // Gets a specific blog from the ID
     }
 }

@@ -8,10 +8,10 @@ namespace Dyreinternat_Library.Interfaces
 {
     public interface IEmployeeRepo
     {
-        string Name { get; set; }
-        string Email { get; set; }
-        string PhoneNumber { get; set; }
-        int EmployeeID { get; set; }
-        Enum Role { get; set; }
+        List<Employee> GetAll(); // List for all Employees
+
+        void Add(Employee employee); // Adds an employee to the repository
+
+        Employee GetByID(int id); // Gets a specific employee from the ID
     }
 }

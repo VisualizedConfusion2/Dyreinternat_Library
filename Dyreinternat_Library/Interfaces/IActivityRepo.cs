@@ -8,11 +8,10 @@ namespace Dyreinternat_Library.Interfaces
 {
     public interface IActivityRepo
     {
-        string Title { get; set; }
-        string Description { get; set; }
-        DateTime DateTime { get; set; }
-        int NumberOfPerticipants { get; set; }
-        string Author { get; set; }
-        int ActivityID { get; set; }
+        List<Activity> GetAll(); // List for all Activities
+
+        void Add(Activity activity); // Adds an activity to the repository
+
+        Activity GetByID(int id); // Gets a specific activity from the ID
     }
 }

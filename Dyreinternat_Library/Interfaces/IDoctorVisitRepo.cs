@@ -8,9 +8,10 @@ namespace Dyreinternat_Library.Interfaces
 {
     public interface IDoctorVisitRepo
     {
-        DateTime Datetime { get; set; }
-        string Description { get; set; }
-        int AnimalID { get; set; }
-        int CreatedByEmployeeID { get; set; }
+        List<DoctorVisit> GetAll(); // List for all DoctorVisits
+
+        void Add(DoctorVisit doctorVisit); // Adds a doctor visit to the repository
+
+        DoctorVisit GetByID(int id); // Gets a specific doctor visit by ID
     }
 }
