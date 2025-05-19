@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dyreinternat_Library.Models;
 
-namespace Dyreinternat_Library.Services
+namespace Dyreinternat_Library.Interfaces
 {
     public interface IAnimalRepo
     {

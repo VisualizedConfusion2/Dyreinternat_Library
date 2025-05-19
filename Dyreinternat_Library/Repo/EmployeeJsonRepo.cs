@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dyreinternat_Library.Interfaces
 {
-    internal class IEmployeeJsonRepo
+    internal class EmployeeJsonRepo
     {
     }
 }
