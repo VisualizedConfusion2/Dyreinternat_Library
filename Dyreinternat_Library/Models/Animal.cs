@@ -2,6 +2,7 @@
 {
     public class Animal
     {
+        //Instance Variables
         private string name;
         private string race;
         private string species;
@@ -12,6 +13,7 @@
         private string medicalHistory;
         private string visitorLog;
 
+        //Properties
         public string Name
         {
             get => name;
@@ -66,6 +68,7 @@
             set => visitorLog = value;
         }
 
+        //Constructor
         public Animal(string nameValue, string raceValue, string speciesValue, int chipNumberValue,
               string characteristicsValue, string sizeValue, int birthYearValue,
               string medicalHistoryValue, string visitorLogValue)

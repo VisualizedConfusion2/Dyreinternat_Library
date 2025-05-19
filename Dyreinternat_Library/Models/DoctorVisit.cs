@@ -3,11 +3,13 @@
     public class DoctorVisit
 
     {
+        //Instance Variables
         private DateTime _datetime;
         private string _description;
         private int _animalID;
         private int _createdByEmployeeID;
 
+        //Properties
         public DateTime Datetime
         {
             get { return _datetime; }
@@ -35,6 +37,7 @@
         }
 
 
+        //Constructor
         public DoctorVisit(DateTime dateTime, string description, int animalID, int createdByEmployeeID) 
         {
             Datetime = dateTime;

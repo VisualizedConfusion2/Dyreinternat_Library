@@ -2,13 +2,14 @@
 {
     public class Costomer
     {
+        //Instance Variables
         private string _name;
         private string _email;
         private string _phoneNumber;
         private int _costomerID;
 
 
-
+        //Properties
         public string Name
         {
             get => _name;
@@ -39,6 +40,8 @@
             set => _costomerID = value;
         }
 
+
+        //Constructor
         public Costomer(string name, string email, string phoneNumber, int costumerID)
         {
             Name = name;

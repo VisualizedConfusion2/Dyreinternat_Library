@@ -2,10 +2,11 @@
 {
     public class Booking
     {
+        //Instance Variables
         private string phoneNumber;
         private int bookingID;
 
-
+        //Properties
         public string PhoneNumber
         {
             get
@@ -24,6 +25,8 @@
             set => bookingID = value; 
         }
 
+
+        //Constructor
         public Booking(string phoneNumber, int bookingID)
         {
             PhoneNumber = phoneNumber;
