@@ -83,5 +83,10 @@
             _medicalHistory = medicalHistoryValue;
             _visitorLog = visitorLogValue;
         }
+
+        public Animal()
+        {
+
+        }
     }
 }
