@@ -6,8 +6,9 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Dyreinternat_Library.Services;
 using Dyreinternat_Library.Models;
+using Dyreinternat_Library.Interfaces;
 
-namespace Dyreinternat_Library.Repos
+namespace Dyreinternat_Library.Repo
 {
     class AnimalJsonRepo: IAnimalRepo
     {
