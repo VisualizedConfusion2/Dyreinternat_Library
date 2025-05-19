@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dyreinternat_Library.Repo
 {
-    public class BokingJsonRepo
-    {
+
         public class BookingJsonRepo
         {
             private List<Booking> _bookings = new List<Booking>(); // List of all Activities
@@ -22,7 +21,7 @@ namespace Dyreinternat_Library.Repo
 
             private void LoadFile(string path) // Method to get the data from the json file
             {
-                string file = path + "booking.json";
+                string file = path + "bookings.json";
                 if (File.Exists(file))
                 {
                     string json = File.ReadAllText(file);
