@@ -22,7 +22,7 @@ namespace Dyreinternat_Library.Repo
 
         private void LoadFile(string path) // Method to get the data from the json file
         {
-            string file = path + "blog.json";
+            string file = path + "blogs.json";
             if (File.Exists(file))
             {
                 string json = File.ReadAllText(file);
@@ -34,7 +34,7 @@ namespace Dyreinternat_Library.Repo
 
         private void SaveFile(string path) // Method to save the data to the json file
         {
-            File.WriteAllText(path + "activities.json", JsonSerializer.Serialize(_blogs, new JsonSerializerOptions { WriteIndented = true }));
+            File.WriteAllText(path + "blogs.json", JsonSerializer.Serialize(_blogs, new JsonSerializerOptions { WriteIndented = true }));
         }
 
         public void Add(Blog blog) // Adds an activity to the repository
