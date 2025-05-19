@@ -22,12 +22,11 @@ namespace Dyreinternat_Library.Repo
         private void LoadFile(string path) // Method to get the data from the json file
         {
             string json = File.ReadAllText(path + "animals.json");
-
             _animals = JsonSerializer.Deserialize<List<Animal>>(json);
         }
         private void SaveFile(string path) // Method to save the date to the json file
         {
-            File.WriteAllText(path + "animals.json", JsonSerializer.Serialize(_animals));
+            File.WriteAllText(path + "animals.json", JsonSerializer.Serialize(_animals, new JsonSerializerOptions { WriteIndented = true }));
         }
         public void Add(Animal animal) // Adds an animal to the repository
         {
