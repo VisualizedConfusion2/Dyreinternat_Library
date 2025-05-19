@@ -8,5 +8,6 @@ namespace Dyreinternat_Library.Interfaces
 {
     internal class DoctorVisitJsonRepo
     {
+
     }
 }
