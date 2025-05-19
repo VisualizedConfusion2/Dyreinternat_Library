@@ -1,6 +1,6 @@
 ﻿namespace Dyreinternat_Library
 {
-    public class Costomer
+    public class Customer
     {
         //Instance Variables
         private string _name;
@@ -42,7 +42,7 @@
 
 
         //Constructor
-        public Costomer(string name, string email, string phoneNumber, int costumerID)
+        public Customer(string name, string email, string phoneNumber, int costumerID)
         {
             _name = name;
             _email = email;
