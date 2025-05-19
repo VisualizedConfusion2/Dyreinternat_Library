@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dyreinternat_Library.Services
 {
-    internal class DoctorVisitService
+    public class DoctorVisitService
     {
     }
 }
