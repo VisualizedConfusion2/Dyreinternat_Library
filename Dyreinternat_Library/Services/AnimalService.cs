@@ -9,7 +9,7 @@ using Dyreinternat_Library.Models;
 
 namespace Dyreinternat_Library.Services
 {
-    class AnimalService
+    public class AnimalService
     {
         private IAnimalRepo _animalRepo;
         public AnimalService(IAnimalRepo animalRepo)

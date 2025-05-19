@@ -6,7 +6,7 @@
         private string _name;
         private string _email;
         private string _phoneNumber;
-        private int _costomerID;
+        private int _customerID;
 
 
         //Properties
@@ -31,13 +31,13 @@
             set => _phoneNumber = value;
         }
 
-        public int CostomerID
+        public int CustomerID
         {
             get
             {
-                return _costomerID;
+                return _customerID;
             }
-            set => _costomerID = value;
+            set => _customerID = value;
         }
 
 
