@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dyreinternat_Library.Repo
+namespace Dyreinternat_Library.Interfaces
 {
-    internal class BokingJsonRepo
+    internal class BlogService
     {
     }
 }
