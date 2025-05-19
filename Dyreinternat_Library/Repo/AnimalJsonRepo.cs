@@ -10,7 +10,7 @@ using Dyreinternat_Library.Interfaces;
 
 namespace Dyreinternat_Library.Repo
 {
-    class AnimalJsonRepo: IAnimalRepo
+    public class AnimalJsonRepo: IAnimalRepo
     {
         private List<Animal> _animals = new List<Animal>(); // List of all Animals
         private string _path; // Filepath for the json file

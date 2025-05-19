@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dyreinternat_Library.Repo
 {
-    internal class DoctorVisitJsonRepo
+    public class DoctorVisitJsonRepo
     {
 
     }
