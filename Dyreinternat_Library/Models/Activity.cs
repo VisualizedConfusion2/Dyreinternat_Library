@@ -4,6 +4,8 @@ namespace Dyreinternat_Library
 {
     public class Activity
     {
+
+        //Instance Variables
         private string _titel;
         private string _description;
         private DateTime _datetime;
@@ -11,7 +13,7 @@ namespace Dyreinternat_Library
         private string _author;
         private int _activityID;
 
-
+        //Properties
         public string Titel
         {
             get => _titel;
@@ -52,6 +54,8 @@ namespace Dyreinternat_Library
             set => _activityID = value;
         }
 
+
+        //Constructor
         public Activity(string titel, string description, DateTime datetime, int numberOfPerticipants, string author, int activityID) 
         { 
         

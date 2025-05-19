@@ -2,12 +2,15 @@
 {
     public class Employee
     {
+        //Instance Variables
         private string _name;
         private string _email;
         private string _phoneNumber;
         private int _employeeID;
         private Enum _role;
 
+
+        //Properties
         public string Name
         {
             get => _name;
@@ -43,6 +46,7 @@
             set => _role = value;
         }
 
+        //Constructor
         public Employee(string name, string email, string phoneNumber, int employeeID, Enum role) 
         { 
             Name = name;
