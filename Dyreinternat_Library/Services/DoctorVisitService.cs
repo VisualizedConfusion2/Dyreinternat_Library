@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dyreinternat_Library.Interfaces
+namespace Dyreinternat_Library.Services
 {
-    internal class DoctorVisitJsonRepo
+    internal class DoctorVisitService
     {
     }
 }
