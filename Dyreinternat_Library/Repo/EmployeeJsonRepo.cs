@@ -1,4 +1,5 @@
-﻿using Dyreinternat_Library.Models;
+﻿using Dyreinternat_Library.Interfaces;
+using Dyreinternat_Library.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dyreinternat_Library.Repo
 {
-    public class EmployeeJsonRepo
+    public class EmployeeJsonRepo:IEmployeeRepo
     {
         private List<Employee> _employee = new List<Employee>(); // List of all Employees
         private string _path; // Filepath for the json file
