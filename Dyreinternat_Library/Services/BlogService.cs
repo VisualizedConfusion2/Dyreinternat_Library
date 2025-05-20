@@ -20,7 +20,7 @@ namespace Dyreinternat_Library.Services
             return _blogRepo.GetAll();
         }
 
-        public void Add(Blog blog)
+        public void Add(Blog Blog)
         {
             _blogRepo.Add(blog);
         }
