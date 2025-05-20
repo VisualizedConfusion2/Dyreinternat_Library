@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Dyreinternat_Library.Interfaces;
 
 namespace Dyreinternat_Library.Repo
 {
 
-        public class BookingJsonRepo
+        public class BookingJsonRepo: IBookingRepo
         {
             private List<Booking> _bookings = new List<Booking>(); // List of all Activities
             private string _path; // Filepath for the json file
