@@ -27,9 +27,9 @@ namespace Dyreinternat_Library.Services
         }
 
 
-        public Employee GetByID(int id)
+        public Employee GetByID(int employeeID)
         {
-            return _employeeRepo.GetByID(id);
+            return _employeeRepo.GetByID(employeeID);
         }
     }
 }
