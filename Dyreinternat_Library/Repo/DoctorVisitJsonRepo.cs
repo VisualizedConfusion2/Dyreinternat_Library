@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dyreinternat_Library.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Dyreinternat_Library.Repo
 {
-    public class DoctorVisitJsonRepo
+    public class DoctorVisitJsonRepo:IDoctorVisitRepo
     {
             private List<DoctorVisit> _doctorVisits = new List<DoctorVisit>(); // List of all Activities
             private string _path; // Filepath for the json file
