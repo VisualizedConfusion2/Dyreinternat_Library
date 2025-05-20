@@ -22,15 +22,15 @@ namespace Dyreinternat_Library.Services
             return _animalRepo.GetAll();
         }
 
-        public void Add(Animal Animal)
+        public void Add(Animal animal)
         {
-            _animalRepo.Add(Animal);
+            _animalRepo.Add(animal);
         }
 
 
-        public Animal GetByID(int id)
+        public Animal GetByID(int chipNumber)
         {
-            return _animalRepo.GetByID(id);
+            return _animalRepo.GetByID(chipNumber);
         }
     }
 }

@@ -21,9 +21,9 @@ namespace Dyreinternat_Library.Services
             return _activityRepo.GetAll();
         }
 
-        public void Add(Activity Activity)
+        public void Add(Activity activity)
         {
-            _activityRepo.Add(Activity);
+            _activityRepo.Add(activity);
         }
 
 
