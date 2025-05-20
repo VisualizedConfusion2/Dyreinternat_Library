@@ -22,7 +22,7 @@ namespace Dyreinternat_Library.Services
 
         public void Add(Blog Blog)
         {
-            _blogRepo.Add(blog);
+            _blogRepo.Add(Blog);
         }
 
 
