@@ -52,11 +52,11 @@
 
 
         //Constructor
-        public Blog(string title, string description, DateTime datetime, string image, string author, int blogID) 
+        public Blog(string title, string description, DateTime dateTime, string image, string author, int blogID) 
         { 
             _title = title;
             _description = description;
-            _datetime = datetime;
+            _datetime = dateTime;
             _img = image;
             _author = author;
             _blogID = blogID;

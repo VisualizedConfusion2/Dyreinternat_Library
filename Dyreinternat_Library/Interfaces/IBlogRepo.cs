@@ -13,5 +13,7 @@ namespace Dyreinternat_Library.Interfaces
         public void Add(Blog blog); // Adds a blog to the repository
 
         public Blog GetByID(int id); // Gets a specific blog from the ID
+
+        void Update(Blog blog); // Updates specific information in blogs
     }
 }

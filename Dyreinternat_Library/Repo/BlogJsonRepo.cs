@@ -59,6 +59,21 @@ namespace Dyreinternat_Library.Repo
             }
             return null;
         }
+        public void Update(Blog updatedBlog)
+        {
+            var existing = _blogs.FirstOrDefault(b => b.BlogID == updatedBlog.BlogID);
+            if (existing != null)
+            {
+                existing.Title = updatedBlog.Title;
+                existing.Description = updatedBlog.Description;
+                existing.DateTime = updatedBlog.DateTime;
+                existing.Author = updatedBlog.Author;
+                existing.Image = updatedBlog.Image;
+
+                
+            }
+        }
+
 
     }
 }
