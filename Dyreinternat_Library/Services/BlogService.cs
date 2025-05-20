@@ -25,7 +25,6 @@ namespace Dyreinternat_Library.Services
             _blogRepo.Add(blog);
         }
 
-
         public Blog GetByID(int blogID)
         {
             return _blogRepo.GetByID(blogID);

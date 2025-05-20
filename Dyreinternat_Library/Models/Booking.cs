@@ -32,5 +32,10 @@
             _phoneNumber = phoneNumber;
             _bookingID = bookingID;
         }
+
+        public Booking()
+        {
+
+        }
     }
 }

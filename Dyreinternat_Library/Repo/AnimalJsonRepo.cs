@@ -38,11 +38,11 @@ namespace Dyreinternat_Library.Repo
             return _animals;
         }
 
-        public Animal GetByID(int id) // Returns an animal from a specific id
+        public Animal GetByID(int chipNumber) // Returns an animal from a specific id
         {
             foreach (Animal animal in _animals)
             {
-                if (id == animal.ChipNumber)
+                if (chipNumber == animal.ChipNumber)
                 {
                     return animal;
                 }
