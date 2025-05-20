@@ -65,11 +65,12 @@ namespace Dyreinternat_Library
             _numberOfPerticipants = numberOfPerticipants;
             _author = author;
             _activityID = activityID;
-        
-        
-        
         }
 
+        public Activity()
+        {
+
+        }
 
     }
 }
