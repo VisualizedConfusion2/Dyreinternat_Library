@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dyreinternat_Library.Repo
 {
-    public class BlogJsonRepo
+    public class BlogJsonRepo : IBlogRepo
     {
         private List<Blog> _blogs = new List<Blog>(); // List of all Activities
         private string _path; // Filepath for the json file

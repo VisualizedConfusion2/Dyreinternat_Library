@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Dyreinternat_Library.Interfaces;
 
 namespace Dyreinternat_Library.Repo
 {
-    public class CustomerJsonRepo
+    public class CustomerJsonRepo : ICustomerRepo
     {
         private List<Customer> _customers = new List<Customer>(); // List of all Activities
         private string _path; // Filepath for the json file
