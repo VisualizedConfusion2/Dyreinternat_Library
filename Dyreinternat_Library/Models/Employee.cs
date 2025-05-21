@@ -7,7 +7,14 @@
         private string _email;
         private string _phoneNumber;
         private int _employeeID;
-        private Enum _role;
+        private Role _role;
+
+        public enum Role
+        {
+            Manager,
+            Doctor,         
+            Administration
+        }
 
 
         //Properties
@@ -40,14 +47,14 @@
             set => _employeeID = value;
         }
 
-        public Enum Role
+        public Role EmployeeRole
         {
             get => _role;
             set => _role = value;
         }
 
         //Constructor
-        public Employee(string name, string email, string phoneNumber, int employeeID, Enum role) 
+        public Employee(string name, string email, string phoneNumber, int employeeID, Role role) 
         { 
             _name = name;
             _email = email;
