@@ -61,17 +61,17 @@ namespace Dyreinternat_Library.Repo
         }
         public void Update(Blog updatedBlog)
         {
-           Blog existing = _blogs.FirstOrDefault(b => b.BlogID == updatedBlog.BlogID);
-            if (existing != null)
-            {
-                existing.Title = updatedBlog.Title;
-                existing.Description = updatedBlog.Description;
-                existing.DateTime = updatedBlog.DateTime;
-                existing.Author = updatedBlog.Author;
-                existing.Image = updatedBlog.Image;
+        Blog existing = _blogs.FirstOrDefault(b => b.BlogID == updatedBlog.BlogID);
+        if (existing != null)
+        {
+            existing.Title = updatedBlog.Title;
+            existing.Description = updatedBlog.Description;
+            existing.DateTime = updatedBlog.DateTime;
+            existing.Author = updatedBlog.Author;
+            existing.Image = updatedBlog.Image;
+        }
+        SaveFile(_path);
 
-                
-            }
         }
 
 
