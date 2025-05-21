@@ -61,7 +61,7 @@ namespace Dyreinternat_Library.Repo
         }
         public void Update(Blog updatedBlog)
         {
-            var existing = _blogs.FirstOrDefault(b => b.BlogID == updatedBlog.BlogID);
+           Blog existing = _blogs.FirstOrDefault(b => b.BlogID == updatedBlog.BlogID);
             if (existing != null)
             {
                 existing.Title = updatedBlog.Title;
