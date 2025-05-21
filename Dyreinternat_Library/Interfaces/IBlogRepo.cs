@@ -14,6 +14,6 @@ namespace Dyreinternat_Library.Interfaces
 
         public Blog GetByID(int id); // Gets a specific blog from the ID
 
-        void Update(Blog blog); // Updates specific information in blogs
+        public void Update(Blog blog); // Updates specific information in blogs
     }
 }
