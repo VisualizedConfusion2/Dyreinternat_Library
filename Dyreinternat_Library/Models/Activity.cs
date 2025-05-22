@@ -9,7 +9,7 @@ namespace Dyreinternat_Library
         private string _title;
         private string _description;
         private DateTime _datetime;
-        private int _numberOfPerticipants;
+        private int _numberOfParticipants;
         private string _author;
         private int _activityID;
 
@@ -32,10 +32,10 @@ namespace Dyreinternat_Library
         
         }
 
-        public int NumberOfPerticipants 
+        public int NumberOfParticipants 
         { 
-            get => _numberOfPerticipants;
-            set => _numberOfPerticipants = value;
+            get => _numberOfParticipants;
+            set => _numberOfParticipants = value;
         
         }
 
@@ -56,13 +56,13 @@ namespace Dyreinternat_Library
 
 
         //Constructor
-        public Activity(string title, string description, DateTime datetime, int numberOfPerticipants, string author, int activityID) 
+        public Activity(string title, string description, DateTime datetime, int numberOfParticipants, string author, int activityID) 
         { 
         
             _title = title;
             _description = description;
             _datetime = datetime;
-            _numberOfPerticipants = numberOfPerticipants;
+            _numberOfParticipants = numberOfParticipants;
             _author = author;
             _activityID = activityID;
         }
