@@ -12,6 +12,7 @@ namespace Dyreinternat_Library
         private int _numberOfPerticipants;
         private string _author;
         private int _activityID;
+        public List<int> RegisteredCustomerIDs { get; set; } = new List<int>();
 
         //Properties
         public string Title

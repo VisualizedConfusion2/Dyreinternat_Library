@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using Dyreinternat_Library.Interfaces;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Dyreinternat_Library.Repo
 {
@@ -55,6 +56,21 @@ namespace Dyreinternat_Library.Repo
                 }
             }
             return null;
+        }
+        public void UpdateActivity(Activity updatedActivity)
+        {
+            Activity existing = _activities.FirstOrDefault(a => a.ActivityID == updatedActivity.ActivityID);
+            if (existing != null)
+            {
+                existing.Title = updatedActivity.Title;
+                existing.Description = updatedActivity.Description;
+                existing.DateTime = updatedActivity.DateTime;
+                existing.NumberOfPerticipants = updatedActivity.NumberOfPerticipants;
+                existing.Author = updatedActivity.Author;
+                existing.ActivityID = updatedActivity.ActivityID;
+            }
+            SaveFile(_path);
+
         }
     }
 }

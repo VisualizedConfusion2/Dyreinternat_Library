@@ -13,5 +13,6 @@ namespace Dyreinternat_Library.Interfaces
         void Add(Activity activity); // Adds an activity to the repository
 
         Activity GetByID(int id); // Gets a specific activity from the ID
+        public void UpdateActivity(Activity activity); // Updates specific information in activities
     }
 }
