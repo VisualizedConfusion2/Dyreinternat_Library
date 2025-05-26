@@ -32,28 +32,28 @@ namespace Dyreinternat_Library.Services
             return _activityRepo.GetByID(activityID);
         }
 
-        public void UpdateActivity(Activity activity)
+        public void UpdateActivity(Activity activity) // Updates specific information in activities
         {
             _activityRepo.UpdateActivity(activity);
         }
-        public bool RegisterCustomerToActivity(int activityId, int customerId)
+        public bool RegisterCustomerToActivity(int activityId, int customerId) // Registers a customer to an activity
         {
-            var activity = _activityRepo.GetByID(activityId);
+            var activity = _activityRepo.GetByID(activityId); // Get the activity by ID
 
-            if (activity == null)
+            if (activity == null) // Check if the activity exists
             {
                 Console.WriteLine("Aktiviteten blev ikke fundet.");
-                return false;
+                return false; // Activity not found
             }
 
-            if (activity.RegisteredCustomerIDs.Contains(customerId))
+            if (activity.RegisteredCustomerIDs.Contains(customerId)) // Check if the customer is already registered for the activity
             {
                 Console.WriteLine("Kunden er allerede tilmeldt aktiviteten.");
                 return false;
             }
 
-            activity.RegisteredCustomerIDs.Add(customerId);
-            _activityRepo.UpdateActivity(activity); // 👈 Bruger opdateringsmetode på enkelt objekt
+            activity.RegisteredCustomerIDs.Add(customerId);// Add the customer ID to the activity's registered customers list
+            _activityRepo.UpdateActivity(activity); // Update the activity in the repository
             return true;
         }
 

@@ -59,11 +59,13 @@ namespace Dyreinternat_Library.Repo
             }
             return null;
         }
+        /// Updates specific information in activities
         public void Update(Blog updatedBlog)
         {
-        Blog existing = _blogs.FirstOrDefault(b => b.BlogID == updatedBlog.BlogID);
-        if (existing != null)
-        {
+        Blog existing = _blogs.FirstOrDefault(b => b.BlogID == updatedBlog.BlogID); // Find the existing blog by ID
+            if (existing != null)// Check if the blog exists in the list
+            {
+            // Update the properties of the existing blog with the values from the updated blog
             existing.Title = updatedBlog.Title;
             existing.Description = updatedBlog.Description;
             existing.DateTime = updatedBlog.DateTime;

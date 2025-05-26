@@ -57,11 +57,13 @@ namespace Dyreinternat_Library.Repo
             }
             return null;
         }
+        /// Updates specific information in activities
         public void UpdateActivity(Activity updatedActivity)
         {
+            // Check if the activity exists in the list
             Activity existing = _activities.FirstOrDefault(a => a.ActivityID == updatedActivity.ActivityID);
             if (existing != null)
-            {
+            {// If it exists, update its properties
                 existing.Title = updatedActivity.Title;
                 existing.Description = updatedActivity.Description;
                 existing.DateTime = updatedActivity.DateTime;
@@ -69,6 +71,7 @@ namespace Dyreinternat_Library.Repo
                 existing.Author = updatedActivity.Author;
                 existing.ActivityID = updatedActivity.ActivityID;
             }
+            // Save the updated list back to the file
             SaveFile(_path);
 
         }
