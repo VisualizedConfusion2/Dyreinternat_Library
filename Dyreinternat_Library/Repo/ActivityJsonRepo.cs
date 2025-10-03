@@ -67,7 +67,7 @@ namespace Dyreinternat_Library.Repo
                 existing.Title = updatedActivity.Title;
                 existing.Description = updatedActivity.Description;
                 existing.DateTime = updatedActivity.DateTime;
-                existing.NumberOfPerticipants = updatedActivity.NumberOfPerticipants;
+                existing.NumberOfParticipants = updatedActivity.NumberOfParticipants;
                 existing.Author = updatedActivity.Author;
                 existing.ActivityID = updatedActivity.ActivityID;
             }
